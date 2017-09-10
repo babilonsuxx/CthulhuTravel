@@ -1,9 +1,1 @@
-Khuyasse? O_o
-<<<<<<< HEAD
-<<<<<<< HEAD
-fuck off
-asd
-=======
->>>>>>> parent of 15473fb... change
-=======
->>>>>>> parent of 15473fb... change
+123
