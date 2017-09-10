@@ -8,16 +8,17 @@
     android:layout_height="match_parent"
 
     tools:context="com.example.babilonsuxx.ctulchutravel.MainActivity">
-    
+
     <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/menu_header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
         android:background="@color/colorWhite"
-        app:itemTextColor="@color/colorDarkGray"
+        app:headerLayout="@layout/menu_header"
         app:itemIconTint="@color/colorDarkGray"
-        app:menu="@menu/leftmenu"
-        android:layout_gravity="start">
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Button"
+        app:itemTextColor="@color/colorDarkGray"
+        app:menu="@menu/leftmenu">
 
 
     </android.support.design.widget.NavigationView>
