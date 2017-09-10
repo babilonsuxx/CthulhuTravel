@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/search_menu" android:title="@string/menu_search" android:icon="@drawable/search"/>
+    <item android:id="@+id/hot_menu" android:title="@string/menu_hot" android:icon="@drawable/hot"/>
+    <item android:id="@+id/send_menu" android:title="@string/menu_send" android:icon="@drawable/create"/>
+    <item android:id="@+id/contact_menu" android:title="@string/menu_contact" android:icon="@drawable/location"/>
+</menu>
