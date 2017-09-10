@@ -1,3 +1,6 @@
 Khuyasse? O_o
+<<<<<<< HEAD
 fuck off
 asd
+=======
+>>>>>>> parent of 15473fb... change
