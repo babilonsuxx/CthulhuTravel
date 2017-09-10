@@ -1,1 +1,8 @@
-123
+<<<<<<< HEAD
+Khuyasse? O_o
+fuck off
+asd
+=======
+khuyasse
+
+>>>>>>> vlad
