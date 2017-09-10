@@ -4,4 +4,6 @@
     <string name="menu_hot">Горящие Туры</string>
     <string name="menu_send">Оставить заявку</string>
     <string name="menu_contact">Контакты</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>
