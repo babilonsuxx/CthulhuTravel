@@ -6,13 +6,13 @@
     <string name="menu_contact">Контакты</string>
     <string name="open">open</string>
     <string name="close">close</string>
-    <string name="title_activity_navigationv2">navigationv2</string>
-
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-
-    <string name="action_settings">Settings</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send_header">Не нашли подходящий тур? Оставьте нам заявку!</string>
+    <string name="send_name">Имя</string>
+    <string name="send_phone">Номер телефона</string>
+    <string name="send_email">Email</string>
+    <string name="send_comment">Комментарий</string>
+    <string name="send_justone">Укажите хотя бы один способ связи</string>
+    <string name="send_note">Заявка не является бронированием.Менеджер уточнит наличие тура и свяжется с вами.</string>
+    <string name="send_subheader">Мы свяжемся с вами и поможем с выбором.</string>
+    <string name="send_personal_data">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</string>
 </resources>
