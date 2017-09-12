@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity   {
         fragmentMenuTransaction.addToBackStack(null);
         fragmentMenuTransaction.commit();
 
+
         //
 
       //  tv = (TextView) findViewById(R.id.textView);

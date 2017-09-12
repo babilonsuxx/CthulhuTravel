@@ -2,29 +2,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/send_header"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/send_subheader"/>
+    android:padding="12dp"
 
-<LinearLayout
+    >
+
+    <ImageView
+        android:id="@+id/menuWhiteLogo"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+       android:src="@drawable/logo_send" />
+
+
+
+
+<LinearLayout android:layout_marginTop="16dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
     <ImageView
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:src="@drawable/bug"
-        android:layout_marginTop="36px"
+        android:src="@drawable/man"
+        android:layout_gravity="center_vertical"
         />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,19 +48,24 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/mail"
-            android:layout_marginTop="36px"
+            android:src="@drawable/phone"
+            android:layout_gravity="center_vertical"
             />
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="@string/send_email"/>
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginStart="16dp"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/send_phone"
+                />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,19 +74,21 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/phone"
-            android:layout_marginTop="36px"
+            android:src="@drawable/mail"
+            android:layout_gravity="center_vertical"
             />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:hint="@string/send_phone"/>
+            android:inputType="textEmailAddress"
+            android:hint="@string/send_email"/>
     </android.support.design.widget.TextInputLayout>
-        </LinearLayout>
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,28 +98,32 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/create"
-            android:layout_marginTop="36px"
+            android:layout_gravity="center_vertical"
             />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:hint="@string/send_comment"
+
             android:maxLength="500"/>
     </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
-    <android.support.design.widget.CheckableImageButton
-        android:layout_height="wrap_content"
+
+    <Button
         android:layout_width="match_parent"
-        >
-
-    </android.support.design.widget.CheckableImageButton>
-
-
+        android:layout_height="wrap_content"
+        android:text="разбудить"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="40dp"
+    />
 
 
 
