@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:padding="12dp"
-
+    android:alpha="1"
 
     >
 
-    <ImageView
-        android:id="@+id/menuWhiteLogo"
+<!-- вот тут с отступами делаем на форму-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="136dp"
-       android:src="@drawable/logo_send" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:alpha="0.9"
+        android:background="@drawable/shadow"
+        android:elevation="2dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Не нашли подходящий тур?"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="23dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оставьте нам заявку!"
+            android:gravity="center_horizontal"
+            />
 
 
-
-
-<LinearLayout android:layout_marginTop="16dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/man"
-        android:layout_gravity="center_vertical"
-        />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-
         >
         <EditText
             android:layout_width="match_parent"
@@ -40,22 +46,10 @@
 />
     </android.support.design.widget.TextInputLayout>
 
-</LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/phone"
-            android:layout_gravity="center_vertical"
-            />
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             >
             <EditText
                 android:layout_width="match_parent"
@@ -64,56 +58,29 @@
                 android:hint="@string/send_phone"
                 />
         </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
 
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/mail"
-            android:layout_gravity="center_vertical"
-            />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp">
+        >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="@string/send_email"/>
     </android.support.design.widget.TextInputLayout>
-    </LinearLayout>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/create"
-            android:layout_gravity="center_vertical"
-            />
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp">
+        android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:hint="@string/send_comment"
-
-            android:maxLength="500"/>
+            android:maxLength="300"/>
     </android.support.design.widget.TextInputLayout>
-        </LinearLayout>
+
 
 
     <Button
@@ -122,17 +89,22 @@
         android:text="отправить заявку"
         android:textColor="@color/colorWhite"
         android:background="@color/colorAccent"
-        android:layout_marginTop="28dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
     />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:text="@string/send_note"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
+
+        android:layout_marginTop="16dp"
         android:text="@string/send_personal_data"/>
 
 
-
+    </LinearLayout>
 
 </LinearLayout>

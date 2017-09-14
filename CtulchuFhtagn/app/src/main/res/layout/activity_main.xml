@@ -8,14 +8,17 @@
     android:layout_height="match_parent"
 
     tools:context="com.example.babilonsuxx.ctulchutravel.MainActivity">
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_send">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fragment_container"
         android:orientation="vertical"
-
         >
+
 
         <!--TextView
             android:layout_width="fill_parent"
@@ -24,7 +27,7 @@
             android:text="lkjklljljlk">
         </TextView-->
     </LinearLayout>
-
+    </ScrollView>
 
     <android.support.design.widget.NavigationView
         android:layout_width="wrap_content"
